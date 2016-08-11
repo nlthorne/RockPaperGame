@@ -1,0 +1,6 @@
+c:\users\nltho\documents\visual studio 2015\Projects\RockPaperGame\RockPaperGame\bin\Debug\RockPaperGame.exe.config
+C:\Users\nltho\Documents\Visual Studio 2015\Projects\RockPaperGame\RockPaperGame\obj\Debug\RockPaperGame.csprojResolveAssemblyReference.cache
+C:\Users\nltho\Documents\Visual Studio 2015\Projects\RockPaperGame\RockPaperGame\bin\Debug\RockPaperGame.exe
+C:\Users\nltho\Documents\Visual Studio 2015\Projects\RockPaperGame\RockPaperGame\bin\Debug\RockPaperGame.pdb
+C:\Users\nltho\Documents\Visual Studio 2015\Projects\RockPaperGame\RockPaperGame\obj\Debug\RockPaperGame.exe
+C:\Users\nltho\Documents\Visual Studio 2015\Projects\RockPaperGame\RockPaperGame\obj\Debug\RockPaperGame.pdb
