@@ -15,7 +15,7 @@ namespace RockPaperGame
 
         public string GetHumanSelection()
         {
-            Console.WriteLine("Choose: Rock, Paper, Scissors:  ");
+            Console.WriteLine("Choose: Rock, Paper, Scissors, Lizard or Spock:  ");
             inputPlayer = Console.ReadLine();
             inputPlayer = inputPlayer.ToLower();
             return inputPlayer;
@@ -25,7 +25,7 @@ namespace RockPaperGame
         {
             Random random = new Random();
             int randomInt;
-            randomInt = random.Next(1, 4);
+            randomInt = random.Next(1, 6);
             return randomInt;
         }
 
@@ -42,13 +42,23 @@ namespace RockPaperGame
                     }
                     else if (inputPlayer == "paper")
                     {
-                        Console.WriteLine("You Win!\n");
+                        Console.WriteLine("Paper covers Rock, You Win!\n");
                         scorePlayer++;
                     }
                     else if (inputPlayer == "scissors")
                     {
-                        Console.WriteLine("You Lose!\n");
+                        Console.WriteLine("Rock crushes Scissors, You Lose!\n");
                         scoreCpu++;
+                    }
+                    else if (inputPlayer == "lizard")
+                    {
+                        Console.WriteLine("Rock crushes Lizard, You Lose!\n");
+                        scoreCpu++;
+                    }
+                    else if (inputPlayer == "spock")
+                    {
+                        Console.WriteLine("Spock vaporizes Rock, You Win!\n");
+                        scorePlayer++;
                     }
                     break;
 
@@ -57,7 +67,7 @@ namespace RockPaperGame
                     Console.WriteLine("Computer chooses Paper.");
                     if (inputPlayer == "rock")
                     {
-                        Console.WriteLine("You Lose!\n");
+                        Console.WriteLine("Paper covers Rock, You Lose!\n");
                         scoreCpu++;
                     }
                     else if (inputPlayer == "paper")
@@ -66,8 +76,18 @@ namespace RockPaperGame
                     }
                     else if (inputPlayer == "scissors")
                     {
-                        Console.WriteLine("You Win!\n");
+                        Console.WriteLine("Scissors cut paper, You Win!\n");
                         scorePlayer++;
+                    }
+                    else if (inputPlayer == "lizard")
+                    {
+                        Console.WriteLine("Lizard eats Paper, You Win!\n");
+                        scorePlayer++;
+                    }
+                    else if (inputPlayer == "spock")
+                    {
+                        Console.WriteLine("Paper disproves Spock, You Lose!\n");
+                        scoreCpu++;
                     }
                     break;
 
@@ -76,15 +96,81 @@ namespace RockPaperGame
                     Console.WriteLine("Computer chooses Scissors.");
                     if (inputPlayer == "rock")
                     {
-                        Console.WriteLine("You Win!\n");
+                        Console.WriteLine("Rock crushes Scissors, You Win!\n");
                         scorePlayer++;
                     }
                     else if (inputPlayer == "paper")
                     {
-                        Console.WriteLine("You Lose!\n");
+                        Console.WriteLine("Scissors cut Paper, You Lose!\n");
                         scoreCpu++;
                     }
                     else if (inputPlayer == "scissors")
+                    {
+                        Console.WriteLine("It's a Draw!\n");
+                    }
+                    else if (inputPlayer == "lizard")
+                    {
+                        Console.WriteLine("Scissors decapitate Lizard, You Lose!\n");
+                        scoreCpu++;
+                    }
+                    else if (inputPlayer == "spock")
+                    {
+                        Console.WriteLine("Spock smashes Scissors, You Win!\n");
+                        scorePlayer++;
+                    }
+                    break;
+                case 4:
+                    inputCpu = "Lizard";
+                    Console.WriteLine("Computer chooses Lizard.");
+                    if (inputPlayer == "rock")
+                    {
+                        Console.WriteLine("Rock crushes Lizard, You Win!\n");
+                        scorePlayer++;
+                    }
+                    else if (inputPlayer == "paper")
+                    {
+                        Console.WriteLine("Lizard eats Paper, You Lose!\n");
+                        scoreCpu++;
+                    }
+                    else if (inputPlayer == "scissors")
+                    {
+                        Console.WriteLine("Scissors decapitate Lizard, You Win!\n");
+                        scorePlayer++;
+                    }
+                    else if (inputPlayer == "lizard")
+                    {
+                        Console.WriteLine("It's a Draw!\n");
+                    }
+                    else if (inputPlayer == "spock")
+                    {
+                        Console.WriteLine("Lizard poisons Spock, You Lose!\n");
+                        scoreCpu++;
+                    }
+                    break;
+                case 5:
+                    inputCpu = "Spock";
+                    Console.WriteLine("Computer chooses Spock.");
+                    if (inputPlayer == "rock")
+                    {
+                        Console.WriteLine("Spock vaporizes Rock, You Lose!\n");
+                        scoreCpu++;
+                    }
+                    else if (inputPlayer == "paper")
+                    {
+                        Console.WriteLine("Paper disproves Spock, You Win!\n");
+                        scorePlayer++;
+                    }
+                    else if (inputPlayer == "scissors")
+                    {
+                        Console.WriteLine("Spock smashes Scissors, You Win!\n");
+                        scorePlayer++;
+                    }
+                    else if (inputPlayer == "lizard")
+                    {
+                        Console.WriteLine("Lizard poison Spock, You Win!\n");
+                        scorePlayer++;
+                    }
+                    else if (inputPlayer == "spock")
                     {
                         Console.WriteLine("It's a Draw!\n");
                     }
